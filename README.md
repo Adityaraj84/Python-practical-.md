@@ -127,3 +127,85 @@ print(sum)
 
 ![Screenshot 2024-11-07 132054](https://github.com/user-attachments/assets/262fb515-ef5b-405d-bd72-167353996637)
 
+## practical 3 - WAP to create a pyramid of the character '*' and a reverse pyramid.
+
+
+
+def print_pyramid(n):
+   
+   for i in range(n):
+     
+     print(' ' * (n - i - 1), end='')
+     
+     print('*' * (2 * i + 1))
+
+#Number of rows for the pyramid
+rows = 5
+
+print("Pyramid:")
+
+print_pyramid(rows)
+
+
+def print_reverse_pyramid(n):
+   
+   for i in range(n, 0, -1):
+    
+     print(' ' * (n - i), end='')
+    
+     print('*' * (2 * i - 1))
+
+#Number of rows for the reverse pyramid
+rows = 5
+
+print("\nReverse Pyramid:")
+
+print_reverse_pyramid(rows)
+
+![IMG-20241106-WA0009](https://github.com/user-attachments/assets/00f62032-1d63-4650-902e-1fa292b5f22f)
+
+![IMG-20241106-WA0008](https://github.com/user-attachments/assets/88de3a7a-4f38-4621-a542-bd7bed445a53)
+
+
+
+
+
+## practical 4 - WAP that accepts a character and performances the following.
+
+### a. print whether the character is a letter or numeric digit or a special character.    
+
+### b. if the character is a letter, print whether the letter is uppercase or lowercase. 
+
+### c. if the character is numeric digit, print its name in the text.
+
+  
+charac = input("Enter the data: ")
+
+if charac >= 'A' and charac <= 'Z':
+    
+   print(charac, "is an Uppercase Letter")
+
+elif charac >= 'a' and charac <= 'z':
+    
+   print(charac, "is a Lowercase Letter")
+
+elif charac >= '0' and charac <= '9':
+    
+   print(charac, "is a Numeric Digit")
+   n = int(charac)
+   
+   dict= {0 : 'zero', 1 : 'one', 2 : 'two', 3 : 'three', 4 : 'four', 5 : 'five', 6 : 'six', 7 : 'seven', 8 : 'eight', 9 : 'nine'}
+    
+   print(dict[n])
+
+else:
+
+   print(charac, "is a Special Character")   
+
+   
+![IMG-20241106-WA0011](https://github.com/user-attachments/assets/532abd9e-cfa7-4fd0-aa49-4ac96f3a142f)
+
+
+![IMG-20241106-WA0010](https://github.com/user-attachments/assets/af3bf10a-22b0-41d2-bb60-c8e6d3c881b9)
+    
+   
