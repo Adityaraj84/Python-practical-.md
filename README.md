@@ -269,3 +269,58 @@ print(" string2 =", string2)
 
 
 ![IMG_20241106_115748_028](https://github.com/user-attachments/assets/bac06745-7b54-4056-84ee-a461fb68ec19)
+## practical 7 - WAP to perform the following operations on a string. 
+
+### a. find the frequency of a character in a string . 
+
+string = "hello world to python"
+
+character = input("enter a character ")
+
+f=0
+
+for i in string:
+
+   if i ==character:
+     f+=1
+print("frequency of" , character ,'is', f)     
+
+![Screenshot 2024-11-07 112630](https://github.com/user-attachments/assets/965af336-aee9-43b1-885f-93e89f10e10f)
+
+
+
+### b. replace a character by another character in a string .
+
+string = "hello world to python"
+
+print(string.replace ("e","i"))
+
+
+![Screenshot 2024-11-07 113427](https://github.com/user-attachments/assets/5480e2ce-5bf2-48cf-98c9-c3da63472fec)
+
+
+
+### c. remove the first occurance os a character from a satring .
+
+string = "hello world to python program"
+
+print(string[3:len(string)])
+
+![Screenshot 2024-11-07 114106](https://github.com/user-attachments/assets/64a834c4-7768-4cf8-93a3-5ab1705db93e)
+
+
+
+### d. remove all the occurances of a character from a string
+
+string = "hello world to python tutorial"
+
+print(string[ :0])
+
+![Screenshot 2024-11-07 114402](https://github.com/user-attachments/assets/636c507d-7afc-4e33-ae1c-4fe52059df51)
+
+
+print(string[ :2])
+
+
+![Screenshot 2024-11-07 114538](https://github.com/user-attachments/assets/9df7d84a-bd5e-4c58-a7f0-028ada7db6bb)
+
