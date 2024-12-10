@@ -324,3 +324,81 @@ print(string[ :2])
 
 ![Screenshot 2024-11-07 114538](https://github.com/user-attachments/assets/9df7d84a-bd5e-4c58-a7f0-028ada7db6bb)
 
+## practical 8 - WAP  to create a list of only the even integers appearing in the list (may have elements of other types ) using for loop and list comprehension.
+
+def cubes():
+  
+  newlist =[]
+  
+  number = [1,3,5,2,7,4,"five"]
+
+  for i in number:
+  
+   if type(i)==int:
+   
+     if i%2 ==0:
+      
+       newlist.append(i**3)
+  
+  print(newlist)
+
+cubes()
+
+![Screenshot 2024-11-07 132054](https://github.com/user-attachments/assets/262fb515-ef5b-405d-bd72-167353996637)
+
+## practical 9 - Write a function that accepts two streings and returns the indices of all mthe occurancesa of the second string in the first string as a list . If the second string is not present in the first string then it should return -1 .
+
+
+def occurances(a,b):
+  
+  newlist = []
+
+  
+  if b not in a:
+   
+    print(-1)
+ 
+  else:
+    
+    i=0
+   
+    while i<=len(a):
+     
+      c=a.find(b,i)
+     
+      if c== -1:
+      
+       break
+      
+      i = c+len(b)
+      
+      newlist.append(c)
+    
+    print(newlist)
+
+a=input("enter first string; ")
+
+b=input("enter second string; ")
+
+occurances(a,b)
+
+
+![Screenshot 2024-11-07 150130](https://github.com/user-attachments/assets/b0a92e87-cc70-4513-859f-82c72f08e04f)
+
+
+## practical 10 - Write a function that prints a dictionary where the keys are numbers between 1 and 5 and the values are the cubes of the keys .
+
+def cubes():
+ 
+ dict={}
+
+ for i in range (1,9):
+ 
+   dict[i] = i**3
+
+ print(dict)
+
+cubes()
+
+![Screenshot 2024-11-07 151910](https://github.com/user-attachments/assets/0aee5bdc-285f-4723-b396-0b4ca85f8824)
+
