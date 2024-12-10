@@ -402,3 +402,81 @@ cubes()
 
 ![Screenshot 2024-11-07 151910](https://github.com/user-attachments/assets/0aee5bdc-285f-4723-b396-0b4ca85f8824)
 
+## practical 11 - consider a tuple t1 =(1,4,6,3,2,8,5,10,9,7,6). WAP to perform the following.
+
+### (a.)  print half the values of the tuple in one line and other half in the other next line.
+
+t1 =(1,4,6,3,2,8,5,10,9,7,6)
+
+half_value=len(t1)//2
+
+first_half = t1[ :half_value]
+
+print("first_half" ,first_half )
+
+second_half = t1[half_value: ]
+
+print("second_half" ,second_half )   
+
+![Screenshot 2024-11-07 153337](https://github.com/user-attachments/assets/ec1f42c5-a0cd-45bf-8ddc-6f698f086fc3)
+
+### (b.) Print another tuple whose values are even numbers in a given tuple.
+
+t1 =(1,4,6,3,2,8,5,10,9,7,6)
+
+even_number = tuple(filter(lambda x: x%2==0, t1))
+
+print("tuple with even number ", even_number )
+
+![Screenshot 2024-11-07 154105](https://github.com/user-attachments/assets/9047ffe3-d839-4ad8-a6d2-101b85dd11f8)
+
+
+### (c.) Concatenate a tuple t2 =(12,15,11) with t1.
+
+t1 =(1,4,6,3,2,8,5,10,9,7,6)
+
+t2 =(12,15,11)
+
+concatenation= (t1 ,t2)
+
+print("tuple with concatenation  ", concatenation )
+
+![Screenshot 2024-11-07 154606](https://github.com/user-attachments/assets/96394980-9de9-4dc6-8954-ecdb623c90f3)
+
+ 
+
+### (d.) return Maximum and minimum value from this given tuple.
+
+t1 =(1,4,6,3,2,8,5,10,9,7,6)
+
+print("maximum value in t1 is ", max(t1))
+
+print("minimum value in t1 is ", min(t1))
+
+![Screenshot 2024-11-07 154955](https://github.com/user-attachments/assets/5c9ba36f-bad3-4374-a3bc-d32ac27fe950)
+
+
+
+## practical 12- WAP to accept a name from a user. Raisen and handle appropriate exception(s) if the text entered by the user contains digits and /or special characters . 
+
+name =input("enter a name ")
+
+try:
+   
+    if name.isalpha():
+       
+       print(" This is correct name ")
+
+    else:
+      
+       raise Exception(" There text is error ")
+
+except Exception as e:
+   
+    print(e)
+
+
+![Screenshot 2024-11-07 160028](https://github.com/user-attachments/assets/885f035d-3ac5-4d56-8518-6d2193b98f8a)
+
+![Screenshot 2024-11-07 160243](https://github.com/user-attachments/assets/a9864f28-1803-46bc-9098-31097e2e6b2f)
+
